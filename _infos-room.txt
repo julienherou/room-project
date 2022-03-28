@@ -1,0 +1,132 @@
+PROJET: Room
+-------
+
+
+ARBORESCENCE du projet :
+------------------------
+
+
+- room/
+    - inc/
+        - init.inc.php (connexion BDD, constantes, outils php pour le bon fonctionnement du projet)
+        - functions.inc.php (nos fonctions)
+        - header.inc.php
+        - nav.inc.php
+        - footer.inc.php
+
+
+    - assets/ (les ressources statiques)
+        - css/
+            - style.css
+        - js/
+            - script.js
+        - img/
+            ... les images du projet
+        - img_salles/
+            ... les images de nos salles de réunion
+
+
+    - admin/
+        BACK OFFICE :
+        - gestion_salles.php
+        - gestion_produits.php
+        - gestion_membres.php
+        - gestion_avis.php
+        - gestion_commandes.php
+        - statistiques
+
+
+    - SQL/
+        ... pour conserver nos exports, modélisation ...
+    
+
+
+
+    - _infos-room.txt
+    - template.php
+
+    FRONT OFFICE :
+    - index.php (accueil)
+    - fiche_produit.php (lien vers avis)
+    - inscription.php
+    - connexion.php
+    - profil.php
+    - contact.php
+    - a propos
+    - mentions.php
+    - cgv.php
+
+    
+
+
+Etapes :
+--------
+- Arborescence du projet X
+- Creation de la BDD X
+- Creation du template de base x
+- Page inscription : formulaire + controle + enregistrement x
+- Page connexion : formulaire + controle + connexion x
+- Page profil : affichage des données utilisateur x
+- Page gestion_salles ok
+- Page fiche_produit
+- Page gestion_avis
+- Page gestion_commandes
+- Page statistiques
+- Page contact
+- Page mentions
+- Page cgv
+- Page index (filtre date à gerer)
+- Page gestion_produits (affichage date à gerer)
+- Page inscription/connexion à modifier (front)
+- hover
+- Page gestion_membres (pb pseudo/mdp à gerer)
+- gérer la réservation 1 jour mini et pas de négatif
+
+A FAIRE :
+
+
+- Page intro/presentation
+- modal image
+- carousel
+
+- fleche deco sur page contact
+- rajouter filtre par salle
+- logo espace client + logo Admin
+
+
+
+
+
+NOTES :
+
+
+Template :
+Navigation
+    - Nos salles
+    - Panier
+    - Connexion
+    - Inscription
+    - contact
+    - A propos de nous
+    - Espace Client
+
+
+Accueil :
+Afficher par défaut les produits libres dont la date de dispo est supérieure à la date du jour.
+Affichage en AJAX
+Lien "voir plus" pour ajouter les résultats suivants
+
+Espace Membre, menu déroulant avec :
+    • Inscription (non connecté / connecté)
+    • Connexion (non connecté / connecté)
+    • Profil (connecté)
+
+Fiche produit :
+Bouton "réserver" et "déposer un commentaire" (si connecté)
+Ou lien "connectez-vous" (si non connecté)
+
+Footer :
+Mettre, entre autre, ML et CGV
+Reseaux sociaux
+
+
